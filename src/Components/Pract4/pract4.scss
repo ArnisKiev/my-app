@@ -1,0 +1,19 @@
+
+.pract4-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 3fr;
+}
+
+.form-section {
+    padding: 12px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.table-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

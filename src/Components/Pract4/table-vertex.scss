@@ -1,0 +1,33 @@
+
+
+.table {
+    display: flex;
+    flex-direction: column;
+    .table__row {
+        display: flex;
+
+        & > * {
+            flex-grow: 1;
+        }
+    }
+
+    .table__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table__cell {
+        background-color: red;
+        height: 20px;
+        width: 20px;
+        color: white;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid silver;
+
+        &--root {
+            color: black;;
+        }
+    }
+
+}

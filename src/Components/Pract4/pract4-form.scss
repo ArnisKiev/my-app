@@ -1,0 +1,23 @@
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    & > * {
+        margin: 0 !important;
+    }
+
+    & > input[type='checkbox'] {
+        height: 16px;
+        width: 16px;
+    }
+ 
+}

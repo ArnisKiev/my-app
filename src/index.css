@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+body {
+  background-color: #333;
+}
+
+.app-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.app-container::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #333;
+}
+
+.select-container {
+  margin-bottom: 20px;
+}
+
+.select-option {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+}
+
+.characteristics-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.characteristics-table {
+  flex: 1;
+  padding: 10px;
+}
+
+.characteristic-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  gap: 4px;
+}
+
+.characteristic-label {
+  display: block;
+}
+
+.select-characteristic {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+}
+
+.recognize-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b91bbe;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recognize-button:hover {
+  background-color: #9a199e;
+}
+
+.result-message {
+  text-align: center;
+  margin-top: 10%;
+  font-size: x-large;
+}
+
+.recognized-object-image {
+  text-align: center;
+}
+
